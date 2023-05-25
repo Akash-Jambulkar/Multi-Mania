@@ -1,0 +1,252 @@
+html{
+    height: 100%;
+    background:linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    background:-webkit-linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    background:-moz-linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    background:-o-linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+}
+
+.mathGame{
+    width: 700px;
+    height: 80%;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #ccc;
+    letter-spacing: 50px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+
+#container{
+    height: 400px;
+    width: 550px;
+    background-color: rgb(232, 233, 239);
+    margin:100px auto;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 5px #dddddd;
+    -webkit-box-shadow: 0px 5px 5px 5px #888888;
+    -moz-box-shadow: 0px 5px 5px 5px #888888;
+    position: relative;
+}
+
+#score{
+    background-color: rgb(206, 244, 145);
+    color: rgb(66, 63, 63);
+    padding: 11px;
+    position: absolute;
+    left: 505px;
+    top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px 1px #888888;
+    -webkit-box-shadow: 0px 2px 1px 1px #888888;
+    -moz-box-shadow: 0px 2px 1px 1px #888888;
+
+}
+
+#correct{
+    background-color: rgb(97, 227, 71);
+    color: rgb(56, 47, 47);
+    position: absolute;
+    left: 505px;
+    top: 60px;
+    padding: 8px 11px;
+    box-shadow: 0px 2px 4px 2px #888888;
+    -webkit-box-shadow: 0px 2px 4px 2px #888888;
+    -moz-box-shadow: 0px 2px 4px 2px #888888;
+    border-radius: 10px;
+    display: none;
+}
+
+#wrong{
+    background-color: rgb(225, 77, 77);
+    color: rgb(222, 213, 213);
+    position: absolute;
+    left: 505px;
+    top: 60px;
+    padding: 8px 11px;
+    box-shadow: 0px 2px 4px 2px #888888;
+    -webkit-box-shadow: 0px 2px 4px 2px #888888;
+    -moz-box-shadow: 0px 2px 4px 2px #888888;
+    border-radius: 10px;
+    display: none; 
+        
+}
+
+#questions{
+    width: 400px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 2px 4px 0px rgba(243, 243, 243) ;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(243, 243, 243) ;
+    -moz-box-shadow: 0px 2px 4px 0px rgba(243, 243, 243) ;
+    font-size: 100px;
+    text-align: center;
+    font-family: fantasy;
+    color: #231d1d;
+}
+
+#instruction{
+    width:400px;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    background-color: rgba(131, 158, 176, 0.471);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #3b3b3b;
+    box-shadow: 0px 2px 5px #888888;
+    -webkit-box-shadow: 0px 2px 5px #888888;
+    -moz-box-shadow: 0px 2px 5px #888888;
+}
+
+#choices{
+    width: 450px;
+    height:100px;
+    margin: 5px auto;
+}
+
+.box{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(237, 237, 237);
+    float: left;
+    margin-right: 50px;
+    cursor: pointer;
+    box-shadow: 0px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 75px ;
+    font-size: larger;
+    position: relative;
+    transform: all 0.5s ;
+    -webkit-transform: all 0.5s ;
+    -moz-transform: all 0.5s ;
+    -o-transform: all 0.5s ;
+    -ms-transform: all 0.5s ;
+}
+
+.box:active{
+    background-color: rgba(52, 77, 93, 0.471);
+    box-shadow:0px 0px ;  
+    -webkit-box-shadow:0px 0px ;  
+    -moz-box-shadow:0px 0px ;  
+    top: 4px;  
+}
+
+#box4{
+    margin-right: 0;
+}
+
+#startReset{
+    width: auto;
+    padding: 10px;
+    background-color: rgb(147, 207, 201);
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0px 3px rgba(169, 15, 15, 0.653);
+    -webkit-box-shadow: 0px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 17px;
+    transform: all 0.5s ;
+    -webkit-transform: all 0.5s ;
+    -moz-transform: all 0.5s ;
+    -o-transform: all 0.5s ;
+    -ms-transform: all 0.5s ;
+    position: relative;
+    top: -10px;
+}
+
+#startReset:hover{
+    background-color: rgba(97, 161, 201, 0.753);
+}
+
+#startReset:active{
+    box-shadow:0px 0px ;  
+    -webkit-box-shadow:0px 0px ;  
+    -moz-box-shadow:0px 0px ;  
+    top: 4px;  
+}
+
+#timeRemaining{
+    width: 152px;
+    padding: 10px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    background-color: #d3eea1;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0px 2px 1px 1px #888888;
+    -webkit-box-shadow: 0px 2px 1px 1px #888888;
+    -moz-box-shadow: 0px 2px 1px 1px #888888;
+    
+}
+
+#gameOver {
+    height: 200px;
+    width:500px;
+    background-color:#c9e29c ;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    line-height: 60px;
+    z-index: 2;
+    border-radius: 3px;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   /* Your CSS code here */
+   .mathGame{
+        width: auto;
+        height: 10px;
+        letter-spacing: 10px;
+   }
+
+   #container{
+    width: 300px;
+   }
+
+   #gameOver{
+    background-color: #c7e4df;
+    width: 250px;
+   }
+
+   .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+   }
+
+   #questions, #instruction{
+    width:300px;
+   }
+
+   #score{
+    left: 250px;
+   }
+   #correct,#wrong{
+    top: 60px;
+    left: 250px;
+    display: none;
+   }
+
+  }
